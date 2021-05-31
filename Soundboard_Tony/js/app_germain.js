@@ -74,7 +74,11 @@ const sounds = [
     headerQuote.appendChild(btnPlayPause);
     btnPlayPause.addEventListener("click", () => handleStop(btnPlayPause));
   };
-      
+  
+  audio.onpause = (e) => {
+    const btn = document.querySelector('.pause');
+    if (btn) document.remove(btn);
+  }
       
   sounds.forEach((sound) => {
     const miniature = document.createElement("div");

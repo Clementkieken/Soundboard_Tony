@@ -98,9 +98,10 @@ footer {
 
 .pause{
     background-color: #f0f;
-    color: white;
+    color: #7a490b;
     padding: 2em;
     margin-top: 2em;
     border: 6px lime solid;
-    border-radius: 8px
+    border-radius: 8px;
+    cursor: pointer;
 }
