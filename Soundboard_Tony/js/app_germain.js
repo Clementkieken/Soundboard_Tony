@@ -75,8 +75,9 @@ const sounds = [
     btnPlayPause.addEventListener("click", () => handleStop(btnPlayPause));
   };
   
-  audio.onpause = (e) => {
-    document.querySelector('.pause').remove();
+audio.onpause = (e) => {
+    let btn = document.querySelector('.pause')
+    if (btn) btn.remove();
   }
       
   sounds.forEach((sound) => {
