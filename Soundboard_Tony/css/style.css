@@ -72,6 +72,7 @@ body {
     max-width: 240px;
     max-height: 135px;
     background-color: black;
+    cursor: pointer;
 }
 
 /* ------- */
@@ -92,5 +93,9 @@ footer {
 
 .ending{
     padding: 0.2em;
+
+}
+
+.pause{
 
 }
