@@ -1,7 +1,8 @@
 body {
     background-color: aliceblue;
     font-family: "Roboto", serif;
-     background-image:url(https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero.jpg)
+     background-image:url(https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero.jpg);
+     background-repeat: no-repeat;
 }
 
 .header{
@@ -63,4 +64,9 @@ body {
 
 #jawsThumbnail, #elevatorThumbnail, #millionsThumbnail, #babySharkThumbnail, #dunThumbnail, #badumThumbnail {
     cursor: pointer;
+}
+
+.credit1{
+    text-align: center;
+    background-color: rgba(206, 206, 206, 0.3);
 }
