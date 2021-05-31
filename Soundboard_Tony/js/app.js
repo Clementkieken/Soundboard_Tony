@@ -1,10 +1,21 @@
-var jawsButton = document.getElementById('jaws')
+// Music pour Jaws
+var jawsButton = document.getElementById('jaws');
 
-jawsButton.addEventListener('click', play)
-
-function play() {
-    var audio = new Audio('https://www.youtube.com/watch?v=2J6IA5T7RTs');
+function playJaws() {
+    var audio = new Audio('../ressources/jaws_theme.mp3');
     audio.play();
   }
 
-  <button onclick="play()">Play Audio</button>
+jawsButton.addEventListener('click', playJaws);
+
+// Music pour l'elevator
+var elevatorButton = document.getElementById('elevator');
+
+function playElevator() {
+    var audio = new Audio('../ressources/elevator.mp3');
+    audio.play();
+  }
+
+elevatorButton.addEventListener('click', playElevator);
+
+console.log()
