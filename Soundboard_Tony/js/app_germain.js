@@ -41,27 +41,27 @@ const sounds = [
       external_link: "",
       alt: "badum tss face",
     },
-    ];
-    
-    const playSound = (sound) => {
+  ];
+      
+  const playSound = (sound) => {
     if (!audio.paused) {
       audio.pause();
     }
     audio.src = sound.sound_url;
     audio.currentTime = 0;
     audio.play();
-    };
-    
-    const handleStop = (btn) => {
+  };
+      
+  const handleStop = (btn) => {
     btn.remove();
     audio.pause();
     audio.currentTime = 0;
-    };
-    
-    const audio = document.createElement("audio");
-    const main = document.querySelector(".main-container");
-    
-    audio.onplaying = (e) => {
+  };
+      
+  const audio = document.createElement("audio");
+  const main = document.querySelector(".main-container");
+      
+  audio.onplaying = (e) => {
     const btn = document.querySelector('.pause');
     if(btn) document.remove(btn);
     const btnPlayPause = document.createElement("button");
@@ -73,16 +73,16 @@ const sounds = [
     headerQuote.appendChild(btnContainer);
     headerQuote.appendChild(btnPlayPause);
     btnPlayPause.addEventListener("click", () => handleStop(btnPlayPause));
-    };
-    
-    
-    sounds.forEach((sound) => {
+  };
+      
+      
+  sounds.forEach((sound) => {
     const miniature = document.createElement("div");
     const img = document.createElement("img");
     img.src = sound.img;
     img.alt = sound.alt;
     img.className = "miniature";
-    
+  
     if (sound.external_link) {
       const aLink = document.createElement("a");
       aLink.href = sound.external_link;
@@ -92,6 +92,6 @@ const sounds = [
     } else {
       miniature.appendChild(img);
     }
-    miniature.addEventListener("click", (e) => playSound(sound));
+    img.addEventListener("click", (e) => playSound(sound));
     main.appendChild(miniature);
-    });
+  });
