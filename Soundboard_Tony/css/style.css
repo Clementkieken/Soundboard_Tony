@@ -1,23 +1,26 @@
 body {
     /* background-color: aliceblue; */
     font-family: "Roboto", serif;
+    min-height: 100vh;
 }
 
 #container{
     width: 100%;
-    height: 100vh;
     background-image:url('https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero.jpg');
     background-repeat: no-repeat;
-
+    padding: 2em 0 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .header{
+    margin: 0 2em;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
     align-content: center;
     flex-direction: column;
-    margin: 2em;
     border: 2px solid black;
     width: auto;
     background-color: rgba(206, 206, 206, 0.3);
@@ -47,13 +50,18 @@ body {
 
 .main{
     display: flex;
+    flex: 1;
+    justify-content: center;
+
+}
+
+.main-container {
+    display: flex;
     align-content: space-between;
     width: 100%;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
-
-
 }
 
 .miniature{
@@ -75,4 +83,14 @@ body {
 .credit1{
     text-align: center;
     background-color: rgba(206, 206, 206, 0.3);
+}
+
+footer {
+    align-items: flex-end;
+    padding : 0.5em 0em;
+}
+
+.ending{
+    padding: 0.2em;
+
 }
