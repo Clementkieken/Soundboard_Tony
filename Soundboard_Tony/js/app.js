@@ -1,18 +1,18 @@
 // Music pour Jaws
-var jawsButton = document.getElementById('jaws');
+var jawsButton = document.getElementById('jawsThumbnail');
 
 function playJaws() {
-    var audio = new Audio('../ressources/jaws_theme.mp3');
+    let audio = new Audio('../ressources/jaws_theme.mp3');
     audio.play();
   }
 
 jawsButton.addEventListener('click', playJaws);
 
 // Music pour l'elevator
-var elevatorButton = document.getElementById('elevator');
+var elevatorButton = document.getElementById('elevatorThumbnail');
 
 function playElevator() {
-    var audio = new Audio('../ressources/elevator.mp3');
+    let audio = new Audio('../ressources/elevator.mp3');
     audio.play();
   }
 

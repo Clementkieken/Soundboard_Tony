@@ -58,3 +58,9 @@ body {
     max-height: 135px;
     background-color: black;
 }
+
+/* ------- */
+
+#jawsThumbnail, #elevatorThumbnail, #millionsThumbnail, #babySharkThumbnail, #dunThumbnail, #badumThumbnail {
+    cursor: pointer;
+}
