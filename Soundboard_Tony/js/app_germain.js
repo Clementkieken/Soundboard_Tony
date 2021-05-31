@@ -25,7 +25,7 @@ const sounds = [
     },
     {
       img: "https://images-na.ssl-images-amazon.com/images/S/pv-target-images/ea67a1c8ae6ec4ebd3b0bfe72db01aad5d126a7e5035362a53c18d058c629b55._V_SX1080_.png",
-      sound_url: "../ressources/BabyShark_cut_theme.mp3",
+      sound_url: "../ressources/BabyShark_cut_lowSound_theme.mp3",
       external_link: "",
       alt: "babyshark",
     },
@@ -68,7 +68,10 @@ const sounds = [
     btnPlayPause.type = "button";
     btnPlayPause.textContent = "STOP";
     btnPlayPause.className = "pause";
-    document.body.appendChild(btnPlayPause);
+    const btnContainer = document.createElement('div');
+    const headerQuote = document.querySelector('.quote');
+    headerQuote.appendChild(btnContainer);
+    headerQuote.appendChild(btnPlayPause);
     btnPlayPause.addEventListener("click", () => handleStop(btnPlayPause));
     };
     
