@@ -76,8 +76,7 @@ const sounds = [
   };
   
   audio.onpause = (e) => {
-    const btn = document.querySelector('.pause');
-    if (btn) document.remove(btn);
+    document.querySelector('.pause').remove();
   }
       
   sounds.forEach((sound) => {
